@@ -1,18 +1,13 @@
-// Author: Suko Gurung (suko@pdx.edu)
-// Course: CS163-001
-// Date: 1/13/2025
- 
-// Program #1
-// This is a header file that will be providing an ADT for a linked list 
-
-#ifndef LIST_H
-#define LIST_H
-
 #include <iostream>
 #include <cstring>
 #include <cctype>
-
+// Author: Suko Gurung (suko@pdx.edu)
+// Course: CS163-001
+// This is a header file that will be providing an ADT for a linked list 
+#ifndef LIST_H
+#define LIST_H
 #define MAX_CHAR 100
+
 struct Gift {
     char gift_name[MAX_CHAR];
     char desc[MAX_CHAR];
@@ -36,12 +31,10 @@ struct Recipient_Node {
     Gift_Node* gift_head;
 };
 
-//List ADT
 class CS_Gifts_list {
 public:
     CS_Gifts_list();
     ~CS_Gifts_list();
-
     int add_recipient(const Recipient& to_add);
     int display_all_recipients() const;
     int add_gift(const char* recipient_name, const Gift& to_add);
