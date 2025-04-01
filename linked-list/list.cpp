@@ -1,9 +1,9 @@
+#include "list.h"
+#include <iostream>
 // Author: Suko Gurung
 // Course: Data Structures
 // Program #1
 // This is an implementation file that will be providing an ADT for a linked list. 
-#include "list.h"
-#include <iostream>
 
 CS_Gifts_list::CS_Gifts_list() : head(nullptr), tail(nullptr) {}
 
@@ -28,7 +28,6 @@ int CS_Gifts_list::add_recipient(const Recipient& to_add) {
     new_node->data.age = to_add.age;
     new_node->next = nullptr;
     new_node->gift_head = nullptr;
-
     if (!head) {
         head = new_node;
         tail = new_node;
@@ -88,7 +87,10 @@ int CS_Gifts_list::display_gifts_by_date(int matching_date) const {
         Gift_Node* gift_current = current->gift_head;
         while (gift_current) {
             if (gift_current->data.date == matching_date) {
-                std::cout << "Gift: " << gift_current->data.gift_name << ", Description: " << gift_current->data.desc << ", Date: " << gift_current->data.date << ", Weight: " << gift_current->data.weight << std::endl;
+                std::cout << "Gift: " << gift_current->data.gift_name <<
+                ", Description: " << gift_current->data.desc <<
+                " Date: " << gift_current->data.date << 
+                " Weight: " << gift_current->data.weight << std::endl;
             }
             gift_current = gift_current->next;
         }
