@@ -1,7 +1,7 @@
 # Gift Tracker Application
 
 ## Project Overview
-The Gift Tracker Application is a C++ program that allows users to keep track of gifts given to various recipients. Users can add recipients, associate gifts with specific recipients, view all recipients, display gifts by recipient or date, and remove all gifts for a recipient.
+Enough gifting the same gifts to your families and friends. The Gift Tracker Application is a C++ program that allows users to keep track of gifts given to various recipients. Users can add recipients, associate gifts with specific recipients, view all recipients, display gifts by recipient or date, and remove all gifts for a recipient.
 
 ## Data Structures Used
 

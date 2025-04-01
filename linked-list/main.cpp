@@ -3,14 +3,10 @@
 #include "list.h"
 // Author: Suko Gurung (suko@pdx.edu)
 // Course: CS163-001
-// Date: 1/13/2025
-  
-// Program #1
 // This is the main program as known as client program where user gets to interect.
-
 using namespace std;
-
 void display_menu() {
+    cout << "\n--- Gift Tracker App ---\n";
     cout << "\n--- Menu ---\n";
     cout << "1. Add a new Recipient\n";
     cout << "2. Add a gift to a specific recipient\n";
@@ -43,7 +39,7 @@ int main() {
                 cin.getline(newRec.person_name, MAX_CHAR);
                 cout << "Enter recipient age: ";
                 cin >> newRec.age;
-                cin.ignore(); // Ignore the newline character
+                cin.ignore(); 
                 my_giftList.add_recipient(newRec);
                 break;
             }
@@ -59,7 +55,7 @@ int main() {
                 cin >> newGift.date;
                 cout << "Enter gift weight: ";
                 cin >> newGift.weight;
-                cin.ignore(); // Ignore the newline character
+                cin.ignore(); 
                 my_giftList.add_gift(name, newGift);
                 break;
             }
@@ -75,7 +71,7 @@ int main() {
             case 5:
                 cout << "Enter gift date: ";
                 cin >> date;
-                cin.ignore(); // Ignore the newline character
+                cin.ignore(); 
                 my_giftList.display_gifts_by_date(date);
                 break;
             case 6:
@@ -91,6 +87,5 @@ int main() {
                 break;
         }
     } while (choice != 7);
-
     return 0;
 }

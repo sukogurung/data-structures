@@ -6,7 +6,6 @@
 // This is an implementation file that will be providing an ADT for a linked list. 
 
 CS_Gifts_list::CS_Gifts_list() : head(nullptr), tail(nullptr) {}
-
 CS_Gifts_list::~CS_Gifts_list() {
     Recipient_Node* current = head;
     while (current) {

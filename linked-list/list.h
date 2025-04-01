@@ -1,15 +1,13 @@
-
 #include <iostream>
 #include <cstring>
 #include <cctype>
 // Author: Suko Gurung (suko@pdx.edu)
-// Course: CS163-001
-// Program #1
+// Course: Data Structures
 // This is a header file that will be providing an ADT for a linked list 
-
 #ifndef LIST_H
 #define LIST_H
 #define MAX_CHAR 100
+
 struct Gift {
     char gift_name[MAX_CHAR];
     char desc[MAX_CHAR];
